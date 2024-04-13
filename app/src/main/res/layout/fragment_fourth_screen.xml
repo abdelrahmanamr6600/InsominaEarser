@@ -4,7 +4,7 @@
     android:id="@+id/frameLayout5"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/splash_bg"
     tools:context="com.marco.ensominaearser.ui.onboarding.screens.FourthScreen">
 
 
@@ -26,7 +26,7 @@
         android:fontFamily="@font/source"
         android:text="@string/fourth_fragment_title"
         android:textStyle="bold"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:layout_marginTop="@dimen/_8sdp"
         android:textSize="@dimen/_17ssp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,7 +42,7 @@
         android:fontFamily="@font/source"
         android:gravity="center"
         android:text="@string/fourth_fragment_desc"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="@dimen/_13ssp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

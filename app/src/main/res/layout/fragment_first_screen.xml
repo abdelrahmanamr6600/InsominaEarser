@@ -4,7 +4,7 @@
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/splash_bg"
     tools:context="com.marco.ensominaearser.ui.onboarding.screens.FirstScreen">
 
     <ImageView
@@ -25,7 +25,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="@dimen/_10sdp"
         android:textSize="@dimen/_17ssp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/books_Iv" />
@@ -40,7 +40,7 @@
         android:layout_marginTop="@dimen/_10sdp"
         android:textSize="@dimen/_15ssp"
         android:gravity="center"
-        android:textColor="@color/cardview_dark_background"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title_Tv" />
 

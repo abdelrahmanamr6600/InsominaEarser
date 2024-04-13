@@ -42,4 +42,14 @@
     <string name="signup">Sign Up</string>
     <string name="you_don_t_have_an_account">You don\'t Have an account?</string>
     <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="Hello">Hello, Marco</string>
+    <string name="Library">Library</string>
+    <string name="meditation">Meditations \n &amp;Relaxation</string>
+    <string name="meditation_fragment">Meditations&amp;Relaxation</string>
+    <string name="chat">Doctor Chat</string>
+    <string name="food">Healthy Food</string>
+    <string name="chat_with_doctor">chat with doctor</string>
+    <string name="medical_con">Medical\nConsultant</string>
+    <string name="type_book_name">Type book name ...</string>
+    <string name="book_description">Book description</string>
 </resources>

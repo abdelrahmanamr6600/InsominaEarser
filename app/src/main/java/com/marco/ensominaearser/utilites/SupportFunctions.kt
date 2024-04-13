@@ -53,12 +53,12 @@ class SupportFunctions {
 
         }
 
-        fun showProgressBar(context: Context, text: String, progressText: TextView) {
+        fun showProgressBar(context: Context, text: String) {
             mProgressBar = Dialog(context)
             mProgressBar.setContentView(R.layout.dialog_progress)
             mProgressBar.setCancelable(false)
             mProgressBar.setCanceledOnTouchOutside(false)
-            progressText.text = text
+
             mProgressBar.show()
         }
 

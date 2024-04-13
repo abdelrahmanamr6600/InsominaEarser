@@ -4,7 +4,7 @@
     android:id="@+id/frameLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/splash_bg"
     tools:context="com.marco.ensominaearser.ui.onboarding.screens.SecondScreen">
 
 
@@ -28,7 +28,7 @@
         android:textSize="@dimen/_17ssp"
         android:textStyle="bold"
         android:fontFamily="@font/source"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/books_Iv" />
     <TextView
@@ -40,7 +40,7 @@
         android:layout_marginTop="@dimen/_10sdp"
         android:textSize="@dimen/_13ssp"
         android:gravity="center"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:fontFamily="@font/source"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title_Tv" />

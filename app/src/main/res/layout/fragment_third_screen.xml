@@ -4,7 +4,7 @@
     android:id="@+id/frameLayout3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/splash_bg"
     tools:context="com.marco.ensominaearser.ui.onboarding.screens.ThirdScreen">
 
     <ImageView
@@ -24,7 +24,7 @@
         android:layout_marginTop="@dimen/_8sdp"
         android:fontFamily="@font/source"
         android:text="@string/third_fragment_title"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textStyle="bold"
         android:textSize="@dimen/_17ssp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,7 +41,7 @@
         android:layout_marginTop="@dimen/_10sdp"
         android:textSize="@dimen/_13ssp"
         android:gravity="center"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:fontFamily="@font/source"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title_Tv" />

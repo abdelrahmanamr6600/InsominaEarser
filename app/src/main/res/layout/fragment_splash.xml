@@ -3,8 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/white"
-    tools:context="com.marco.ensominaearser.ui.SplashFragment">
+    android:background="@color/splash_bg"
+    tools:context="com.marco.ensominaearser.ui.fragments.SplashFragment">
 
     <pl.droidsonroids.gif.GifImageView
         android:id="@+id/splash_Iv"
@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/app_name"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="@dimen/_15sdp"
         android:layout_marginTop="@dimen/_20sdp"
         android:textStyle="bold"
@@ -33,7 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/app_desc"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="@dimen/_15sdp"
         android:layout_marginTop="@dimen/_20sdp"
         android:fontFamily="@font/source"
