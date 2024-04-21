@@ -4,7 +4,7 @@ import android.content.Context
 import androidx.media3.common.MediaItem
 import androidx.media3.exoplayer.ExoPlayer
 import com.google.firebase.firestore.FirebaseFirestore
-import com.marco.ensominaearser.model.SongModel
+import com.marco.ensominaearser.data.pojo.SongModel
 
 
 object MyExoplayer {

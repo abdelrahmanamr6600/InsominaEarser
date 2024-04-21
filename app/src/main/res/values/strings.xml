@@ -42,7 +42,7 @@
     <string name="signup">Sign Up</string>
     <string name="you_don_t_have_an_account">You don\'t Have an account?</string>
     <string name="don_t_have_an_account">Don\'t have an account?</string>
-    <string name="Hello">Hello, Marco</string>
+    <string name="Hello">Hello</string>
     <string name="Library">Library</string>
     <string name="meditation">Meditations \n &amp;Relaxation</string>
     <string name="meditation_fragment">Meditations&amp;Relaxation</string>
@@ -52,4 +52,6 @@
     <string name="medical_con">Medical\nConsultant</string>
     <string name="type_book_name">Type book name ...</string>
     <string name="book_description">Book description</string>
+    <string name="fill_out_the_form_below_to_receive_your_diagnosis_results">Fill out the form below to receive your diagnosis results</string>
+    <string name="check_btn">Check</string>
 </resources>

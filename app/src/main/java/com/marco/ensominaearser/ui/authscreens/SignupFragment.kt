@@ -9,7 +9,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.marco.ensominaearser.R
 import com.marco.ensominaearser.databinding.FragmentSignupBinding
-import com.marco.ensominaearser.model.User
+import com.marco.ensominaearser.data.pojo.User
 import com.marco.ensominaearser.utilites.SupportFunctions
 import com.marco.ensominaearser.viewmodel.AuthViewModel
 import com.marco.ensominaearser.viewmodel.ViewModelFactory

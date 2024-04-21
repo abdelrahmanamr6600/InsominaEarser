@@ -1,7 +1,6 @@
 package com.marco.ensominaearser.ui.fragments
 
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -12,7 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.marco.ensominaearser.R
 import com.marco.ensominaearser.databinding.FragmentMeditationBinding
-import com.marco.ensominaearser.model.Category
+import com.marco.ensominaearser.data.pojo.Category
 import com.marco.ensominaearser.ui.adapters.MusicCategoryAdapter
 import com.marco.ensominaearser.utilites.MyExoplayer
 import com.marco.ensominaearser.viewmodel.MusicViewModel

@@ -3,30 +3,26 @@ import android.content.Context
 import android.os.Build
 import android.os.Bundle
 import android.os.Environment
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.RequiresApi
 import androidx.core.content.ContextCompat
-import androidx.fragment.app.FragmentActivity
-import androidx.fragment.app.FragmentManager
-import androidx.fragment.app.FragmentTransaction
 import androidx.navigation.fragment.findNavController
 import com.downloader.OnDownloadListener
 import com.downloader.PRDownloader
 import com.grocery.groceryshop.utilites.serializable
 import com.marco.ensominaearser.R
 import com.marco.ensominaearser.databinding.FragmentBookDetailsBinding
-import com.marco.ensominaearser.model.Book
+import com.marco.ensominaearser.data.pojo.Book
 import com.marco.ensominaearser.utilites.SupportFunctions
 import java.io.File
 
 
 class BookDetailsFragment : Fragment() {
     private lateinit var binding:FragmentBookDetailsBinding
-    private lateinit var book:Book
+    private lateinit var book: Book
 
 
 

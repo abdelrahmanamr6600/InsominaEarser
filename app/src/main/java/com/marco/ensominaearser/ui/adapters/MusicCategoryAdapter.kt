@@ -2,7 +2,6 @@ package com.marco.ensominaearser.ui.adapters
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
-import android.view.RoundedCorner
 import android.view.ViewGroup
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
@@ -12,8 +11,7 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.bumptech.glide.request.RequestOptions
 import com.marco.ensominaearser.databinding.CategoryItemRecyclerRowBinding
-import com.marco.ensominaearser.model.Book
-import com.marco.ensominaearser.model.Category
+import com.marco.ensominaearser.data.pojo.Category
 
 class MusicCategoryAdapter:RecyclerView.Adapter<MusicCategoryAdapter.CategoryViewHolder>() {
     lateinit var onCategoryClick:((Category)->Unit)

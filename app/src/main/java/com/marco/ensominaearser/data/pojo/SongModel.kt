@@ -1,4 +1,4 @@
-package com.marco.ensominaearser.model
+package com.marco.ensominaearser.data.pojo
 
 data class SongModel(
     val id : String,

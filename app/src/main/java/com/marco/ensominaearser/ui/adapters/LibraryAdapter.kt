@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.bumptech.glide.Glide
 import com.marco.ensominaearser.databinding.BookCardBinding
-import com.marco.ensominaearser.model.Book
+import com.marco.ensominaearser.data.pojo.Book
 
 class LibraryAdapter:RecyclerView.Adapter<LibraryAdapter.BookViewHolder>() {
     lateinit var onBookClick:((Book)->Unit)

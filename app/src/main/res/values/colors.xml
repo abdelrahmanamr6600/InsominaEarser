@@ -3,7 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="splash_bg">#1e183c</color>
-    <color name="blue">#010B28</color>
+    <color name="blue">#1e183c</color>
     <color name="background_item_blur">#B3F4ECEC</color>
     <color name="shimmer_color">#dddddd</color>
 </resources>

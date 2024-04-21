@@ -1,4 +1,4 @@
-package com.marco.ensominaearser.model
+package com.marco.ensominaearser.data.pojo
 
 data class User(
     var firstName:String,

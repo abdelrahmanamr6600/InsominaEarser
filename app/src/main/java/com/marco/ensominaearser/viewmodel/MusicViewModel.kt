@@ -1,8 +1,8 @@
 package com.marco.ensominaearser.viewmodel
 
 import androidx.lifecycle.ViewModel
-import com.marco.ensominaearser.model.Category
-import com.marco.ensominaearser.model.SongModel
+import com.marco.ensominaearser.data.pojo.Category
+import com.marco.ensominaearser.data.pojo.SongModel
 import com.marco.ensominaearser.repository.MusicRepository
 import kotlinx.coroutines.flow.MutableStateFlow
 

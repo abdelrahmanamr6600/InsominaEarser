@@ -173,6 +173,7 @@
 
 
                     <LinearLayout
+                        android:id="@+id/cv_Medical_consultant"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@color/background_item_blur"

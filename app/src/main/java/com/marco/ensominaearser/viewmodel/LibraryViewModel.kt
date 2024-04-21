@@ -1,7 +1,7 @@
 package com.marco.ensominaearser.viewmodel
 
 import androidx.lifecycle.ViewModel
-import com.marco.ensominaearser.model.Book
+import com.marco.ensominaearser.data.pojo.Book
 import com.marco.ensominaearser.repository.LibraryRepository
 import kotlinx.coroutines.flow.MutableStateFlow
 

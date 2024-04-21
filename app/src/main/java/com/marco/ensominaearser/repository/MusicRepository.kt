@@ -1,14 +1,12 @@
 package com.marco.ensominaearser.repository
 import android.util.Log
 import com.google.firebase.firestore.FirebaseFirestore
-import com.marco.ensominaearser.model.Category
-import com.marco.ensominaearser.model.SongModel
+import com.marco.ensominaearser.data.pojo.Category
+import com.marco.ensominaearser.data.pojo.SongModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.emitAll
 import kotlinx.coroutines.launch
-import java.time.LocalDate
 
 class MusicRepository {
     private val mFireStore = FirebaseFirestore.getInstance()

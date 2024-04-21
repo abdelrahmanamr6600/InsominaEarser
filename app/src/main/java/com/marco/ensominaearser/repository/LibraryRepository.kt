@@ -2,7 +2,7 @@ package com.marco.ensominaearser.repository
 
 import android.util.Log
 import com.google.firebase.firestore.FirebaseFirestore
-import com.marco.ensominaearser.model.Book
+import com.marco.ensominaearser.data.pojo.Book
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow

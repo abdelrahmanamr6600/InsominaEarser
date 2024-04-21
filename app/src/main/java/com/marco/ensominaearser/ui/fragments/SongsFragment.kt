@@ -6,22 +6,15 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
-import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.grocery.groceryshop.utilites.serializable
 import com.marco.ensominaearser.R
 import com.marco.ensominaearser.databinding.FragmentSongsBinding
-import com.marco.ensominaearser.model.Category
+import com.marco.ensominaearser.data.pojo.Category
 import com.marco.ensominaearser.ui.adapters.SongsAdapter
 import com.marco.ensominaearser.utilites.onSongClickListener
-import com.marco.ensominaearser.viewmodel.MusicViewModel
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.flow.collect
-import kotlinx.coroutines.launch
 
 class SongsFragment : Fragment(),onSongClickListener {
     private lateinit var binding:FragmentSongsBinding

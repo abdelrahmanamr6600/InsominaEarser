@@ -1,5 +1,4 @@
 package com.marco.ensominaearser.ui.adapters
-import android.annotation.SuppressLint
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -9,11 +8,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.google.firebase.firestore.FirebaseFirestore
 import com.marco.ensominaearser.databinding.SongListItemRecyclerRowBinding
-import com.marco.ensominaearser.model.Category
-import com.marco.ensominaearser.model.SongModel
+import com.marco.ensominaearser.data.pojo.SongModel
 import com.marco.ensominaearser.utilites.MyExoplayer
 import com.marco.ensominaearser.utilites.onSongClickListener
-import com.marco.ensominaearser.viewmodel.MusicViewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

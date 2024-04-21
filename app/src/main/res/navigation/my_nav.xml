@@ -79,6 +79,9 @@
         <action
             android:id="@+id/action_homeFragment_to_meditationFragment"
             app:destination="@id/meditationFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_medicalConsultantFragment"
+            app:destination="@id/medicalConsultantFragment" />
     </fragment>
     <fragment
         android:id="@+id/libraryFragment"
@@ -129,5 +132,10 @@
         android:name="com.marco.ensominaearser.ui.fragments.PdfViewFragment"
         android:label="fragment_pdf_view"
         tools:layout="@layout/fragment_pdf_view" />
+    <fragment
+        android:id="@+id/medicalConsultantFragment"
+        android:name="com.marco.ensominaearser.ui.fragments.MedicalConsultantFragment"
+        android:label="fragment_medical_consultant"
+        tools:layout="@layout/fragment_medical_consultant" />
 
 </navigation>
