@@ -82,6 +82,9 @@
         <action
             android:id="@+id/action_homeFragment_to_medicalConsultantFragment"
             app:destination="@id/medicalConsultantFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_healthyFoodFragment"
+            app:destination="@id/healthyFoodFragment" />
     </fragment>
     <fragment
         android:id="@+id/libraryFragment"
@@ -137,5 +140,19 @@
         android:name="com.marco.ensominaearser.ui.fragments.MedicalConsultantFragment"
         android:label="fragment_medical_consultant"
         tools:layout="@layout/fragment_medical_consultant" />
+    <fragment
+        android:id="@+id/healthyFoodFragment"
+        android:name="com.marco.ensominaearser.ui.fragments.HealthyFoodFragment"
+        android:label="fragment_healthy_food"
+        tools:layout="@layout/fragment_healthy_food" >
+        <action
+            android:id="@+id/action_healthyFoodFragment_to_mealDetailsFragment"
+            app:destination="@id/mealDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mealDetailsFragment"
+        android:name="com.marco.ensominaearser.ui.fragments.MealDetailsFragment"
+        android:label="fragment_meal_details"
+        tools:layout="@layout/fragment_meal_details" />
 
 </navigation>

@@ -37,6 +37,9 @@ private lateinit var binding:FragmentHomeBinding
         binding.cvMedicalConsultant.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_medicalConsultantFragment)
         }
+        binding.cvHealthyFood.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_healthyFoodFragment)
+        }
     }
 
 

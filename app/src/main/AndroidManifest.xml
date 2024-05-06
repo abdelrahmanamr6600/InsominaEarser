@@ -18,7 +18,8 @@
         <activity
             android:name="com.marco.ensominaearser.ui.MainActivity"
             android:exported="true"
-            tools:node="merge">
+            tools:node="merge"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

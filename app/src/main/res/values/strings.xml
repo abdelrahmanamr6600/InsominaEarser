@@ -55,4 +55,6 @@
     <string name="fill_out_the_form_below_to_receive_your_diagnosis_results">Fill out the form below to receive your diagnosis results</string>
     <string name="check_btn">Check</string>
     <string name="your_result_is">Your result is</string>
+    <string name="Healthy_Life">Healthy Food\n</string>
+    <string name="dinner">Dinner</string>
 </resources>

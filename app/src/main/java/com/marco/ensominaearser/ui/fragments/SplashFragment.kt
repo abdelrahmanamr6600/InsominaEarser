@@ -41,7 +41,7 @@ class SplashFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
             setAnimation()
-        checkOnBoardingState()
+        findNavController().navigate(R.id.action_splashFragment_to_homeFragment)
         return binding.root
     }
     private fun checkOnBoardingState(){
