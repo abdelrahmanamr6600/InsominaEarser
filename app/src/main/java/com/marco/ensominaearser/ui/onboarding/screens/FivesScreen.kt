@@ -28,18 +28,15 @@ class FivesScreen : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        setListeners()
-
-        return binding.root
-    }
-    private fun setListeners() {
         binding.finishBtn.setOnClickListener {
-          preference.putBoolean(Constants.ONBOARDING_STATE,true)
-
+            preference.putBoolean(Constants.ONBOARDING_STATE,true)
 
             findNavController().navigate(R.id.action_viewPagerFragment_to_loginFragment)
         }
+        return binding.root
     }
+
+
 
 
 }

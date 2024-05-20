@@ -18,6 +18,10 @@ import com.marco.ensominaearser.utilites.Constants
 import com.marco.ensominaearser.utilites.PreferenceManager
 import com.marco.ensominaearser.viewmodel.AuthViewModel
 import com.marco.ensominaearser.viewmodel.ViewModelFactory
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 
 class SplashFragment : Fragment() {
@@ -41,25 +45,27 @@ class SplashFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
             setAnimation()
-        findNavController().navigate(R.id.action_splashFragment_to_homeFragment)
+        checkOnBoardingState()
         return binding.root
     }
     private fun checkOnBoardingState(){
-        Log.d("state","checking")
-        Handler().postDelayed({
-            if (preference.getBoolean(Constants.ONBOARDING_STATE)&&authViewModel.getCurrentUser()!=null)
+        CoroutineScope(Dispatchers.Main).launch {
+            delay(3000L)
+            if (preference.getBoolean(Constants.ONBOARDING_STATE)&&preference.getBoolean("Login"))
             {
                 findNavController().navigate(R.id.action_splashFragment_to_homeFragment)
             }
-            else if (preference.getBoolean(Constants.ONBOARDING_STATE) &&authViewModel.getCurrentUser()==null){
+            else if (preference.getBoolean(Constants.ONBOARDING_STATE) && !preference.getBoolean("Login")){
                 findNavController().navigate(R.id.action_splashFragment_to_loginFragment)
-        }
+            }
             else
                 findNavController().navigate(R.id.action_splashFragment_to_viewPagerFragment)
-        },3000)
+        }
+
+        }
 
 
-    }
+
 
     private fun setAnimation() {
         val appName: Animation = AnimationUtils.loadAnimation(requireContext(), R.anim.app_name)

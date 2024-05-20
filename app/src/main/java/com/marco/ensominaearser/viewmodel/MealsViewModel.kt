@@ -20,6 +20,8 @@ class MealsViewModel:ViewModel() {
     private var _mealDetails:MutableLiveData<Meal> = MutableLiveData()
 
 
+
+
     fun getRandomMeal(category:String):MutableLiveData<MealsList> {
         viewModelScope.launch {
           _meal =  mealsRepository.getBreakfastRandomMeal(category)

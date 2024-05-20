@@ -15,7 +15,7 @@ object RetrofitInstance {
             .build()
 
         Retrofit.Builder()
-            .baseUrl("https://api-ecpf.onrender.com/")
+            .baseUrl("https://api-service-4ayc.onrender.com/")
             .addConverterFactory(GsonConverterFactory.create())
             .client(client)
             .build()

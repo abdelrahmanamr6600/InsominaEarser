@@ -62,16 +62,17 @@ class SignupFragment : Fragment() {
                     "Male"
                 else
                     "Female"
-                val user = User(firstName,lastName,email,password,phone,gender)
+                val user = User("",firstName,lastName,email,password,phone,gender)
 
-                authViewModel.signUp(user.email,user.password)
-                authViewModel.getFirebaseUserMutableLiveData().observe(requireActivity()) {
-                    if (it!=null)
-                        findNavController().navigate(R.id.action_signupFragment_to_loginFragment)
-                    else
-                        binding.signupButton.visibility = View.VISIBLE
-                }
+                authViewModel.signUp(user)
             }
+
+        authViewModel.getCurrentUser().observe(requireActivity()) {
+            if (it!=null)
+                findNavController().navigate(R.id.action_signupFragment_to_loginFragment)
+            else
+                binding.signupButton.visibility = View.VISIBLE
+        }
 
     }
 

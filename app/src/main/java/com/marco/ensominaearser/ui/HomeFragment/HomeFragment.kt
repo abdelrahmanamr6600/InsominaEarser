@@ -1,5 +1,6 @@
 package com.marco.ensominaearser.ui.HomeFragment
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -8,10 +9,12 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.marco.ensominaearser.R
 import com.marco.ensominaearser.databinding.FragmentHomeBinding
+import com.marco.ensominaearser.utilites.PreferenceManager
 
 
 class HomeFragment : Fragment() {
 private lateinit var binding:FragmentHomeBinding
+private lateinit var preference:PreferenceManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,10 +22,13 @@ private lateinit var binding:FragmentHomeBinding
 
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+        preference = PreferenceManager(requireContext())
+
         setListeners()
         return binding.root
     }

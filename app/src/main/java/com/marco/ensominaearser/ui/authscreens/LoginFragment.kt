@@ -56,12 +56,12 @@ setListeners()
             val email = binding.emailEt.text.toString()
             val password = binding.passwordEt.text.toString()
             authViewModel.signIn(email,password)
-            authViewModel.getFirebaseUserMutableLiveData().observe(requireActivity()){
-                if (it!=null)
-                    findNavController().navigate(R.id.action_loginFragment_to_homeFragment)
-                else
-                    binding.loginBtn.visibility =View.VISIBLE
-            }
+        }
+        authViewModel.getCurrentUser().observe(requireActivity()){
+            if (it!=null)
+            findNavController().navigate(R.id.action_loginFragment_to_homeFragment)
+            else
+                binding.loginBtn.visibility =View.VISIBLE
         }
 
     }

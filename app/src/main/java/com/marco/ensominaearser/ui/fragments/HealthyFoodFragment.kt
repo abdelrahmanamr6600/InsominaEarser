@@ -8,7 +8,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -29,18 +28,21 @@ import java.util.Locale
 class HealthyFoodFragment : Fragment() {
     private val viewModel: MealsViewModel by viewModels<MealsViewModel>()
     private lateinit var binding: FragmentHealthyFoodBinding
-    private lateinit var lunchMealsAdapter: MealsAdapter
-    private lateinit var dinnerMealsAdapter: DinnerMealsAdapter
-    private var categoriesList = arrayListOf("Beef","Chicken","Lamb","Miscellaneous","Pasta",
-        "Pork","Seafood","Goat")
+    private  var lunchMealsAdapter =MealsAdapter()
+    private  var dinnerMealsAdapter= DinnerMealsAdapter()
+     val x = 5
+
+//    private var categoriesList = arrayListOf("Beef","Chicken","Lamb","Miscellaneous","Pasta",
+//        "Pork","Seafood","Goat")
     private lateinit var sharedPreference: PreferenceManager
     private lateinit var meal:Meal
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         binding = FragmentHealthyFoodBinding.inflate(layoutInflater)
         sharedPreference = PreferenceManager(requireContext())
+        dinnerMealsAdapter
         openTimePicker()
+
 
     }
 
@@ -48,8 +50,6 @@ class HealthyFoodFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        lunchMealsAdapter = MealsAdapter()
-        dinnerMealsAdapter = DinnerMealsAdapter()
         getRandomMeal()
         getLunchMeals()
         getDinnerMeals()
@@ -58,6 +58,7 @@ class HealthyFoodFragment : Fragment() {
         onRandomMealClick()
         return binding.root
     }
+
 
     private fun getRandomMeal(){
         viewModel.getRandomMeal("Breakfast").observe(viewLifecycleOwner) {

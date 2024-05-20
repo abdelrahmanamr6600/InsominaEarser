@@ -77,6 +77,8 @@ dependencies {
     implementation(libs.logging.interceptor)
     implementation(libs.glide)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.firebase.messaging)
+    implementation(libs.roundedimageview)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

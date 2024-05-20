@@ -64,6 +64,8 @@ setListeners()
                 .addFormDataPart("BMI Category", binding.bmiTv.text.toString())
                 .addFormDataPart("Heart Rate", binding.heartRateTv.text.toString())
                 .addFormDataPart("Daily Steps", binding.dailyStepsTv.text.toString())
+                .addFormDataPart("systolic_bp",binding.systolicBpEt.text.toString())
+                .addFormDataPart("diastolic_bp",binding.diastolicBpEt.text.toString())
                 .build()
 
             RetrofitInstance.api.getResult(requestBody).enqueue(object : Callback<AiModelResponse> {
