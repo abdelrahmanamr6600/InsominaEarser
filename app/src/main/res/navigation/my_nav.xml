@@ -85,6 +85,9 @@
         <action
             android:id="@+id/action_homeFragment_to_healthyFoodFragment"
             app:destination="@id/healthyFoodFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_mainChatFragment"
+            app:destination="@id/mainChatFragment" />
     </fragment>
     <fragment
         android:id="@+id/libraryFragment"
@@ -154,5 +157,31 @@
         android:name="com.marco.ensominaearser.ui.fragments.MealDetailsFragment"
         android:label="fragment_meal_details"
         tools:layout="@layout/fragment_meal_details" />
+    <fragment
+        android:id="@+id/mainChatFragment"
+        android:name="com.marco.ensominaearser.ui.fragments.MainChatFragment"
+        android:label="fragment_main_chat"
+        tools:layout="@layout/fragment_main_chat" >
+        <action
+            android:id="@+id/action_mainChatFragment_to_doctorsFragment"
+            app:destination="@id/doctorsFragment" />
+        <action
+            android:id="@+id/action_mainChatFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/doctorsFragment"
+        android:name="com.marco.ensominaearser.ui.fragments.DoctorsFragment"
+        android:label="fragment_doctors"
+        tools:layout="@layout/fragment_doctors" >
+        <action
+            android:id="@+id/action_doctorsFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.marco.ensominaearser.ui.fragments.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" />
 
 </navigation>

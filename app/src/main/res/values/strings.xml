@@ -58,4 +58,6 @@
     <string name="Healthy_Life">Healthy Food\n</string>
     <string name="dinner">Dinner</string>
     <string name="unable_to_updated_token">Unable to updated token</string>
+    <string name="type_a_message">Typa A Message</string>
+    <string name="online">online</string>
 </resources>

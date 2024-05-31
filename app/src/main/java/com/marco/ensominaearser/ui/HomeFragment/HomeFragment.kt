@@ -46,6 +46,9 @@ private lateinit var preference:PreferenceManager
         binding.cvHealthyFood.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_healthyFoodFragment)
         }
+        binding.cvChat.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_mainChatFragment)
+        }
     }
 
 
