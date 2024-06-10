@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Ensomina Earser</string>
+    <string name="app_name">Insomnia Eraser</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="app_desc">"Healthy sleep. stay focused \n\ Live a healthy life"</string>
@@ -60,4 +60,6 @@
     <string name="unable_to_updated_token">Unable to updated token</string>
     <string name="type_a_message">Typa A Message</string>
     <string name="online">online</string>
+    <string name="fiveth_fragment_title">Ai Medical Consultant</string>
+    <string name="fives_fragment_desc">The AI medical consultant is a comprehensive digital health platform that combines user-friendly interfaces, robust backend processing, and sophisticated AI algorithms to deliver personalized medical advice. It can be accessed through various devices such as smartphones, tablets, and computers, ensuring accessibility and convenience for users.</string>
 </resources>

@@ -35,11 +35,10 @@ class AuthRepository(private var application: Application) {
         }
     }
     fun login(email:String,password:String){
-        firebaseAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener {
-            this.user.value = it.result.user
-            getUserInfFromFireStore(it.result.user!!.uid)
+        firebaseAuth.signInWithEmailAndPassword(email,password).addOnSuccessListener {
+            this.user.value = it.user
+            getUserInfFromFireStore(it.user!!.uid)
         }.addOnFailureListener {
-
             Toast.makeText(application.applicationContext,it.message,Toast.LENGTH_LONG).show()
         }
     }

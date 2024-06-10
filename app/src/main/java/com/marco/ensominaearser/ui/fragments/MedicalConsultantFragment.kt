@@ -67,7 +67,6 @@ setListeners()
                 .addFormDataPart("systolic_bp",binding.systolicBpEt.text.toString())
                 .addFormDataPart("diastolic_bp",binding.diastolicBpEt.text.toString())
                 .build()
-
             RetrofitInstance.api.getResult(requestBody).enqueue(object : Callback<AiModelResponse> {
                 override fun onResponse(p0: Call<AiModelResponse>, p1: Response<AiModelResponse>) {
                     if (p1.isSuccessful){
@@ -76,13 +75,10 @@ setListeners()
                        showDialog(p1.body()!!.prediction)
                     }
                 }
-
                 override fun onFailure(p0: Call<AiModelResponse>, p1: Throwable) {
                     Log.d("res", p1.message!!)
                 }
-
             })
-
         }
 
     }

@@ -59,7 +59,6 @@ class HealthyFoodFragment : Fragment() {
         return binding.root
     }
 
-
     private fun getRandomMeal(){
         viewModel.getRandomMeal("Breakfast").observe(viewLifecycleOwner) {
             if (it.meals.isNotEmpty()) {
@@ -70,7 +69,6 @@ class HealthyFoodFragment : Fragment() {
             }
         }
     }
-
     private fun getLunchMeals(){
         viewModel.getLunchMeals("beef").observe(viewLifecycleOwner) {
             lunchMealsAdapter.diff.submitList(it.meals)
@@ -162,8 +160,8 @@ class HealthyFoodFragment : Fragment() {
             }
 
             val formattedBreakTime = String.format(Locale.getDefault(), "%02d:%02d %s", formattedHour, min+30, amPm)
-            val formattedLunchTime = String.format(Locale.getDefault(), "%02d:%02d %s", formattedHour+4, min, amPm)
-            val formattedDinnerTime = String.format(Locale.getDefault(), "%02d:%02d %s", formattedHour+8, min, amPm)
+            val formattedLunchTime = String.format(Locale.getDefault(), "%02d:%02d %s", formattedBreakTime+4, min, amPm)
+            val formattedDinnerTime = String.format(Locale.getDefault(), "%02d:%02d %s", formattedLunchTime+8, min, amPm)
 
             sharedPreference.putInt("time", hour)
             binding.breakfastTv.text = "BreakFast ($formattedBreakTime)"

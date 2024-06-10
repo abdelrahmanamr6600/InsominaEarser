@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.WindowManager
 import androidx.fragment.app.viewModels
 import com.bumptech.glide.Glide
 import com.google.android.gms.tasks.OnCompleteListener
@@ -33,7 +34,6 @@ class ChatFragment : Fragment() {
     private var _binding: FragmentChatBinding? = null
     private val binding get() = _binding!!
     private lateinit var receiverDoctor: Doctor
-    private val viewModel: ChatViewModel by viewModels<ChatViewModel>()
     private lateinit var chatMessages: ArrayList<ChatMessage>
     private lateinit var chatAdapter: ChatAdapter
     lateinit var preferenceManager: PreferenceManager
@@ -45,6 +45,8 @@ class ChatFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         _binding = FragmentChatBinding.inflate(layoutInflater)
+        activity?.window?.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
+
         receiverDoctor = requireArguments().serializable<Doctor>("doctor")!!
 
     }
@@ -125,10 +127,8 @@ class ChatFragment : Fragment() {
             message,
             conversionId,
             isReceiverAvailable
-            )
+        )
         binding.inputMessage.text = null
-
-
     }
 
 
@@ -147,9 +147,7 @@ class ChatFragment : Fragment() {
             goAddConversion()
 
         }
-        if (!isReceiverAvailable) {
-            //goSendNotification()
-        }
+
     }
 
     fun goUpdateConversion() {
@@ -321,6 +319,7 @@ class ChatFragment : Fragment() {
     private fun getReadableDateTime(date: Date): String {
         return SimpleDateFormat("MMMM dd, yyyy - hh:mm a", Locale.getDefault()).format(date)
     }
+
     private val conversionOnCompleteListener: OnCompleteListener<QuerySnapshot> =
         OnCompleteListener {
             if (it.isSuccessful && it.result != null && it.result!!.documents.size > 0) {
